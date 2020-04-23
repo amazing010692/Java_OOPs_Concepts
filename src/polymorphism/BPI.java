@@ -2,15 +2,27 @@ package polymorphism;
 
 public class BPI {
 	
-	public void getHomeLoanROI(String bankName, int amount) {
+	public double getHomeLoanROI() {
 		
+		return 8.5;
 	}
 	
-	public void getHomeLoanROI(int amount, String bankName) {
+	public double getCarLoanROI() {
 		
+		return 10.5;
 	}
 	
-	public void getHomeLoanROI() {
+	public BPI getObject() {
+		
+		BPI obj = new BPI();
+		return obj;
+	}
+	
+	//WebDriver driver = new FirefoxDriver(); <- polymorphic reference
+	
+	public Number show() {
+		
+		return 10;
 		
 	}
 
